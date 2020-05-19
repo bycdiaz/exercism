@@ -16,10 +16,11 @@ const colors = {
   white: 9
 }
 
+export const COLORS = Object.keys(colors);
+
 export const colorCode = (input) => {
-  const colorFound = Object.keys(colors).includes(input.toLowerCase());
+  const colorFound = COLORS.includes(input.toLowerCase());
   if (colorFound) return colors[input];
 };
 
 
-export const COLORS = Object.keys(colors);
